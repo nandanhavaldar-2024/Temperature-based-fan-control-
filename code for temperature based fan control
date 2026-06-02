@@ -15,7 +15,7 @@ void setup() {
 void loop() {
   float temp = dht.readTemperature();
 
-  if (isnan(temp)) {
+  if (isnan(temp)) {              //Is Not a Number ( if it is unpluge or sensor is not working )
     Serial.println("Sensor error");
     return;
   }
